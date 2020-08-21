@@ -232,7 +232,9 @@ public class CodeGenerator {
         try {
             symbolTable.getNextParam(className, methodName);
             ErrorHandler.printError("The few argument pass for method");
-        } catch (IndexOutOfBoundsException e) {}
+        } catch (IndexOutOfBoundsException e) {
+            throw e;
+        }
             varType t = varType.Int;
             switch (symbolTable.getMethodReturnType(className, methodName))
             {
