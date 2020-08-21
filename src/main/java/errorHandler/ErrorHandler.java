@@ -10,4 +10,8 @@ public class ErrorHandler {
         hasError = true;
         System.out.println(msg);
     }
+
+    private ErrorHandler(){
+
+    }
 }
